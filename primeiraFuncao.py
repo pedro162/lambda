@@ -3,7 +3,7 @@ from log import *
 
 def lambda_handler(event, context):
     # TODO implement
-    log("Log INFO event: ", event)
+    log(event)
 
     return {
         'statusCode': 200,
