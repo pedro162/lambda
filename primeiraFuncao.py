@@ -7,7 +7,10 @@ def lambda_handler(event, context):
 
     return {
         'statusCode': 200,
-        'body': "Hello from Lambda",
+        'body': {
+            "status":"success",
+            "data":"Hello from Lambda",
+        },
         'event': event,
         'headers': {
             'Content-Type': 'application/json',
