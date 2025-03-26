@@ -8,5 +8,9 @@ def lambda_handler(event, context):
     return {
         'statusCode': 200,
         'body': json.dumps('Hello from Lambda!'),
-        'event': json.dumps(event)
+        'event': json.dumps(event),
+        'headers': {
+            'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': '*'
+        }
     }

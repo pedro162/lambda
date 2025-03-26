@@ -1,3 +1,5 @@
+import os
+
 def log(mensagem):
-    print(process.env.MINHA_VAR)
+    print(os.environ["MINHA_VAR"])
     print(mensagem)    
