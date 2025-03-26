@@ -1,2 +1,3 @@
 def log(mensagem):
-    print('Adicionando log: ', mensagem)  
+    print(process.env.MINHA_VAR)
+    print(mensagem)    
