@@ -48,7 +48,7 @@ def handle_s3(event, context):
             }
         }
     else:
-        log("Objeto de tamanho OK")
+        log("Objeto de tamanho OK.")
 
         return {
             'statusCode': 200,
